@@ -1,0 +1,69 @@
+INSERT INTO actor (name, bio) values ('Edward Norton', 'From the age of 5 onward, the Yale graduate (majoring in history) has always been interested in acting. At the age of 8, he would ask his drama teacher what his motivation in a scene was.');
+
+INSERT INTO actor (name, bio) values ('Brad Pitt', 'An actor and producer known as much for his versatility as he is for his handsome face, Golden Globe-winning actor.');
+INSERT INTO director (name, bio) VALUES ('David Fincher', 'David Fincher was born in 1962 in Denver, Colorado, and was raised in Marin County, California. When he was 18 years old he went to work for John Korty at Korty Films in Mill Valley.');
+
+
+INSERT INTO movie (title, run_time, budget, release_date, synopsis, director_id) values ('Inglourious Basterds', '2:33', 75000000, '21 August 2009', 'In Nazi-occupied France during World War II, a plan to assassinate Nazi leaders by a group of Jewish U.S. soldiers coincides with a theatre owners vengeful plans for the same.', 28);
+
+
+INSERT INTO movie (title, run_time, budget, release_date, synopsis, director_id) values ('The Big Lebowski', '1:57', 15000000, '6 March 1998', 'Dude Lebowski, mistaken for a millionaire Lebowski, seeks restitution for his ruined rug and enlists his bowling buddies to help get it.', 40);
+
+INSERT INTO movie (title, run_time, budget, release_date, synopsis, director_id) values ('Eyes Wide Shut', '2:39', 65000000, '16 July 1999', 'A New York City doctor, who is married to an art curator, pushes himself on a harrowing and dangerous night-long odyssey of sexual and moral discovery after his wife admits that she once almost cheated on him.', 2);
+
+INSERT INTO movie (title, run_time, budget, release_date, synopsis, director_id) values ('Fight Club', '2:19', 63000000, '15 October 1999', 'An insomniac office worker looking for a way to change his life crosses paths with a devil-may-care soap maker and they form an underground fight club that evolves into something much much more...', 76);
+
+
+ id |        title
+----+----------------------
+  8 | Fight Club
+  Genre - 7
+  Dir - 76
+  actor - 1, 2
+  6 | Inglourious Basterds
+    Genre - 2, 7, 21
+  Dir - 28
+actor - 1
+  7 | Eyes Wide Shut
+    Genre - 7 14 17
+  Dir - 2
+actor - 4, 5
+  9 | The Big Lebowski
+    Genre - 23, 24
+  Dir - 40
+actor - 6, 7
+
+ id |     name
+----+---------------
+  1 | Brad Pitt
+  2 | Edward Norton
+  4 | Tom Cruise
+  5 | Nicole Kidman
+  6 | Jeff Bridges
+  7 | John Goodman
+
+ id |     name
+----+---------------
+  1 | Action
+  2 | Adventure
+  3 | Animation
+  4 | Biography
+  6 | Documentary
+  7 | Drama
+  8 | FamilyFantasy
+  9 | Film-Noir
+ 10 | Game-Show
+ 11 | History
+ 12 | HorrorMusic
+ 13 | Musical
+ 14 | Mystery
+ 15 | News
+ 16 | Reality-TV
+ 17 | Romance
+ 18 | Sci-FiSport
+ 19 | Talk-Show
+ 20 | Thriller
+ 21 | War
+ 22 | Western
+ 23 | Comedy
+ 24 | Crime

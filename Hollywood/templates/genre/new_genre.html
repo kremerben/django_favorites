@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+        <link href='http://fonts.googleapis.com/css?family=Economica:400,700' rel='stylesheet' type='text/css'>
+    <style type="text/css">
+        body {
+            font-family: 'Economica', sans-serif;
+            font-size: 2em;
+        }
+        h1 {
+{#            font-size: 2em;#}
+        }
+        .serif {
+            font-family: serif;
+        }
+        .center {
+        color: #0f0f0f;
+        width:458px;
+        *width:500px;
+        text-align: center;
+        vertical-align:middle;
+        border: 1px solid #003366;
+        padding: 20px;
+        }
+            .centered {
+position: relative;
+top: 30px;
+                left: 45%;
+  margin-top: -50px;
+  margin-left: -100px;
+
+}
+    input {
+        display: block;
+margin: 7px;
+height: 24px;
+    }
+    </style>
+</head>
+<body style="height:100%;width: 100%;">
+<div class="centered" >
+<h1>Add new genre</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Add new genre">
+</form>
+
+ <a href="{%  url 'genres' %}">Back to Genres</a>
+
+</div>
+</body>
+</html>

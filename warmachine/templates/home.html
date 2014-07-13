@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href='http://fonts.googleapis.com/css?family=Exo:400,700' rel='stylesheet' type='text/css'>
+
+    <style type="text/css">
+        body {
+            font-family: 'Exo', sans-serif;
+            font-size: 2em;
+        }
+        h1 {
+{#            font-size: 2em;#}
+        }
+        .serif {
+            font-family: serif;
+        }
+        .center {
+        color: #0f0f0f;
+        width:458px;
+        *width:500px;
+        text-align: center;
+        vertical-align:middle;
+        border: 1px solid #003366;
+        padding: 20px;
+        }
+    </style>
+</head>
+<body>
+<h1>Welcome to The War Machine</h1>
+
+    <nav>
+        <ul>
+            <li><a href="{% url "home" %}">War Machine Home</a></li>
+            <li><a href="{%  url 'wars' %}">Wars</a></li>
+            <li><a href="{%  url 'battles' %}">Battles</a></li>
+            <li><a href="{%  url 'countries' %}">Countries</a></li>
+            <li><a href="{%  url 'militaries' %}">Militaries</a></li>
+            <li><a href="{%  url 'commanders' %}">Commanders</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
